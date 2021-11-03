@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".dialog.EnquiryDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivClose"
+                android:text="Welcome to truefind.in - truefind is india's most loving Wedding Vendor Portal !"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_24"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <EditText
+            android:id="@+id/editMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_no"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:maxLength="10"
+            android:inputType="number"
+            android:fontFamily="sans-serif-black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <TextView
+            android:id="@+id/editDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/booking_date"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send me details on"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whatsapp"
+                android:layout_toRightOf="@+id/checkBox"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/icon_whatsapp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="CLOSE"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/btn_shape"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/submit"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/btn_shape"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

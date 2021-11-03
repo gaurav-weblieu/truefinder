@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_outline_home_24"/>
+
+        <item
+            android:id="@+id/manage_viedo_gallerye"
+            android:title="Manage Viedo Gallery"
+            android:icon="@drawable/ic_outline_home_24"/>
+
+        <item
+            android:id="@+id/manage_gallerye"
+            android:title="Manage Gallery"
+            android:icon="@drawable/ic_outline_home_24"/>
+
+        <item android:title="Profile">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_login"
+                        android:title="Profile Image"
+                        android:visible="false"/>
+
+                    <item
+                        android:id="@+id/nav_profile"
+                        android:title="Profile"
+                        android:icon="@drawable/perm_identity_24"/>
+
+                    <item
+                        android:id="@+id/forgetPassword"
+                        android:title="Update Description"
+                        android:icon="@drawable/ic_lock_open_24"></item>
+
+                    <item
+                        android:id="@+id/addFQA"
+                        android:title="Add/Update FAQs"
+                        android:icon="@drawable/ic_lock_open_24"></item>
+
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:title="Logout"
+                        android:icon="@drawable/ic_baseline_logout_24"/>
+                </group>
+            </menu>
+        </item>
+
+    </group>
+</menu>

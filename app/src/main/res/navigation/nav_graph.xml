@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.weblieu.findtrue.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryDetailsFragment"
+            app:destination="@id/categoryDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/categoryDetailsFragment"
+        android:name="com.weblieu.findtrue.fragment.CategoryDetailsFragment"
+        android:label="fragment_category_details"
+        tools:layout="@layout/fragment_category_details" >
+        <action
+            android:id="@+id/action_categoryDetailsFragment_to_enquiryDialogFragment"
+            app:destination="@id/enquiryDialogFragment" />
+        <action
+            android:id="@+id/action_categoryDetailsFragment_to_viewProfileFragment"
+            app:destination="@id/viewProfileFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/enquiryDialogFragment"
+        android:name="com.weblieu.findtrue.dialog.EnquiryDialogFragment"
+        android:label="fragment_enquiry_dialog"
+        tools:layout="@layout/fragment_enquiry_dialog" />
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="com.weblieu.findtrue.fragment.ViewProfileFragment"
+        android:label="fragment_view_profile"
+        tools:layout="@layout/fragment_view_profile" />
+</navigation>

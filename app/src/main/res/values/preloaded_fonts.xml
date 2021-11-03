@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/adamina</item>
+        <item>@font/alike</item>
+        <item>@font/amita</item>
+        <item>@font/baloo</item>
+        <item>@font/biorhyme_extrabold</item>
+        <item>@font/cherry_swash</item>
+        <item>@font/tienne</item>
+        <item>@font/volkhov</item>
+    </array>
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ChoosePostFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Choose post"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/radioButtonOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zonal Manager" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sales manager"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sales executive"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Work From Home"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Academia"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relative10th"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10th"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_marginTop="13dp" />
+
+                        <EditText
+                            android:id="@+id/editSchool"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv10"
+                            android:hint="School/Board"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editGrade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editSchool"
+                            android:hint="Percentage/Grade"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13dp"
+                            android:inputType="number"
+                            android:layout_toLeftOf="@+id/buttonOne"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buttonOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/editSchool"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/tab_selecter"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Choose File"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editGrade">
+
+                            <ImageView
+                                android:id="@+id/imageTenPercentage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:visibility="gone"
+                                android:scaleType="centerCrop" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12th"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_marginTop="13dp" />
+
+                        <EditText
+                            android:id="@+id/edit12th"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv12"
+                            android:hint="School/Board"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editPercentage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edit12th"
+                            android:hint="Percentage/Grade"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:inputType="number"
+                            android:layout_toLeftOf="@+id/button2"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/edit12th"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/tab_selecter"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Choose File"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editPercentage">
+
+                            <ImageView
+                                android:id="@+id/image12Doc"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeGraduate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tvGraduate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Graduate"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="13dp" />
+
+                        <EditText
+                            android:id="@+id/editGraduate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvGraduate"
+                            android:hint="College/University"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editPercentageOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editGraduate"
+                            android:hint="Percentage"
+                            android:inputType="number"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/button3"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/editGraduate"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/tab_selecter"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Choose File"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editPercentageOne">
+
+                            <ImageView
+                                android:id="@+id/imageGraguate"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearAdhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adhaar Card"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <ImageView
+                        android:id="@+id/ivImageAdhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/aadhaar_card"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="sans-serif-black"
+                    android:text="NEXT"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

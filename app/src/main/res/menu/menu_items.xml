@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_outline_home_24"/>
+        <item
+            android:id="@+id/add_to_shortlist"
+            android:title="Add to shortlist"
+            android:icon="@drawable/ic_baseline_favorite_border_24"/>
+        <item
+            android:id="@+id/list_business"
+            android:title="Free List Business"
+            android:visible="false"
+            android:icon="@drawable/business_icon"/>
+        <item
+                android:id="@+id/nav_hiring"
+                android:title="Hiring"
+                android:icon="@drawable/ic_baseline_person_search_24"/>
+
+
+        <item android:title="Profile">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_login"
+                        android:title="Login"
+                        android:visible="false"/>
+
+                    <item
+                        android:id="@+id/nav_profile"
+                        android:title="Profile"
+                        android:icon="@drawable/perm_identity_24"/>
+
+                    <item
+                        android:id="@+id/forgetPassword"
+                        android:title="Forgot Password"
+                        android:icon="@drawable/ic_lock_open_24"></item>
+
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:title="Logout"
+                        android:icon="@drawable/ic_baseline_logout_24"/>
+                </group>
+            </menu>
+        </item>
+
+    </group>
+</menu>
+
